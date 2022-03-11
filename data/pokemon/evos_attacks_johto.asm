@@ -101,6 +101,7 @@ EvosAttacksPointers2::
 	dw LugiaEvosAttacks
 	dw HoOhEvosAttacks
 	dw CelebiEvosAttacks
+	dw TreeckoEvosAttacks
 
 ChikoritaEvosAttacks:
 	dbbw EVOLVE_LEVEL, 16, BAYLEEF
@@ -1401,4 +1402,19 @@ CelebiEvosAttacks:
 	dbw 30, FUTURE_SIGHT
 	dbw 40, BATON_PASS
 	dbw 50, PERISH_SONG
+	db 0 ; no more level-up moves
+	
+	TreeckoEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, POUND
+	dbw 1, LEER
+	dbw 5, ABSORB
+	dbw 9, QUICK_ATTACK
+	dbw 13, MEGA_DRAIN
+	dbw 17, PURSUIT
+	dbw 21, GIGA_DRAIN
+	dbw 25, AGILITY
+	dbw 29, SLAM
+	dbw 33, DETECT
+	dbw 49, SCREECH
 	db 0 ; no more level-up moves

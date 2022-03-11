@@ -101,6 +101,7 @@ EggMovePointers2::
 	dw NoEggMoves2
 	dw NoEggMoves2
 	dw NoEggMoves2
+	dw TreeckoEggMoves
 
 ChikoritaEggMoves:
 	dw VINE_WHIP
@@ -467,3 +468,11 @@ LarvitarEggMoves:
 	dw ANCIENTPOWER
 NoEggMoves2:
 	dw -1 ; end
+
+TreeckoEggMoves:
+	dw CRUNCH
+	dw LEECH_SEED
+	dw RAZOR_WIND
+	dw SYNTHESIS
+	dw -1 ; end
+	

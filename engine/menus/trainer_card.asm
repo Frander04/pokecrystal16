@@ -234,7 +234,7 @@ TrainerCard_PrintTopHalfOfCard:
 	hlcoord 2, 4
 	ld de, .ID_No
 	call TrainerCardSetup_PlaceTilemapString
-	hlcoord 9, 2
+	hlcoord 2, 2
 	ld de, wPlayerName
 	call PlaceString
 	hlcoord 5, 4
@@ -256,9 +256,9 @@ TrainerCard_PrintTopHalfOfCard:
 	ret
 
 .Name_Money:
-	db   "NOMBRE/"
+	db   ""
 	next ""
-	next "DINERO@"
+	next "DIN.@"
 
 .ID_No:
 	db $27, $28, -1 ; ID NO
@@ -274,19 +274,12 @@ TrainerCard_Page1_PrintDexCaught_GameTime:
 	ld de, .Badges
 	call PlaceString
 	ld hl, wPokedexCaught
-	ld bc, wEndPokedexCaught - wPokedexCaught
-	call CountSetBits16
-	ld a, c
-	ld c, b
-	ld b, a
-	push bc
-	ld hl, sp + 0
-	ld d, h
-	ld e, l
+	ld b, wEndPokedexCaught - wPokedexCaught
+	call CountSetBits
+	ld de, wNumSetBits
 	hlcoord 15, 10
-	lb bc, 2, 3
+	lb bc, 1, 3
 	call PrintNum
-	pop bc
 	call TrainerCard_Page1_PrintGameTime
 	hlcoord 2, 8
 	ld de, .StatusTilemap
@@ -301,7 +294,7 @@ TrainerCard_Page1_PrintDexCaught_GameTime:
 
 .Dex_PlayTime:
 	db   "#DEX"
-	next "TIEMPO JUEGO@"
+	next "TIEMPO J.@"
 
 	db "@" ; unused
 
@@ -454,7 +447,7 @@ TrainerCard_Page1_PrintGameTime:
 	ldh a, [hVBlankCounter]
 	and $1f
 	ret nz
-	hlcoord 14, 12
+	hlcoord 15, 12
 	ld a, [hl]
 	xor " " ^ $2e ; alternate between space and small colon ($2e) tiles
 	ld [hl], a

@@ -1,6 +1,7 @@
 ; Every Pokémon sorted in New Pokédex Order.
 
 NewPokedexOrder:
+	dw TREECKO
 	dw CHIKORITA
 	dw BAYLEEF
 	dw MEGANIUM
