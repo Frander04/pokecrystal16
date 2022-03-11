@@ -47,17 +47,17 @@
 	charmap "<BOLD_G>",  $66 ; unused
 	charmap "<BOLD_H>",  $67 ; unused
 	charmap "<BOLD_I>",  $68 ; unused
-	charmap "<BOLD_V>",  $69
-	charmap "<BOLD_S>",  $6a
+	charmap "¿",         $69
+	charmap "Á",         $6a
 	charmap "<BOLD_L>",  $6b ; unused
 	charmap "<BOLD_M>",  $6c ; unused
-	charmap "<COLON>",   $6d ; colon with tinier dots than ":"
+	charmap "<COLON>",         $6d
 	charmap "ぃ",         $6e ; hiragana small i, unused
 	charmap "ぅ",         $6f ; hiragana small u, unused
-	charmap "<PO>",      $70
-	charmap "<KE>",      $71
-	charmap "“",         $72 ; opening quote
-	charmap "”",         $73 ; closing quote
+	charmap "ó",         $70
+	charmap "ú",         $71
+	charmap "á",         $72
+	charmap "í",         $73
 	charmap "·",         $74 ; middle dot, unused
 	charmap "…",         $75 ; ellipsis
 	charmap "ぁ",         $76 ; hiragana small a, unused
@@ -128,9 +128,9 @@
 	charmap "(",         $9a
 	charmap ")",         $9b
 	charmap ":",         $9c
-	charmap ";",         $9d
-	charmap "[",         $9e
-	charmap "]",         $9f
+	charmap "É",         $9d
+	charmap "Í",         $9e
+	charmap "Ó",         $9f
 
 	charmap "a",         $a0
 	charmap "b",         $a1
@@ -174,7 +174,7 @@
 	charmap "'t",        $d5
 	charmap "'v",        $d6
 
-	charmap "←",         $df
+	charmap "ñ",         $df
 	charmap "'",         $e0
 	charmap "<PK>",      $e1
 	charmap "<MN>",      $e2
@@ -186,7 +186,7 @@
 	charmap "&",         $e9
 
 	charmap "é",         $ea
-	charmap "→",         $eb
+	charmap "Ñ",         $eb
 	charmap "▷",         $ec
 	charmap "▶",         $ed
 	charmap "▼",         $ee

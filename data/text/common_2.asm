@@ -661,8 +661,8 @@ Text_YouCantUseItInABattle::
 	prompt
 
 Text_AreYouABoyOrAreYouAGirl::
-	text "Are you a boy?"
-	line "Or are you a girl?"
+	text "¿Eres un chico?"
+	line "¿O eres una chica?"
 	done
 
 UnknownText_0x1c0cc6::

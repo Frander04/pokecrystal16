@@ -234,7 +234,7 @@ TrainerCard_PrintTopHalfOfCard:
 	hlcoord 2, 4
 	ld de, .ID_No
 	call TrainerCardSetup_PlaceTilemapString
-	hlcoord 7, 2
+	hlcoord 9, 2
 	ld de, wPlayerName
 	call PlaceString
 	hlcoord 5, 4
@@ -256,9 +256,9 @@ TrainerCard_PrintTopHalfOfCard:
 	ret
 
 .Name_Money:
-	db   "NAME/"
+	db   "NOMBRE/"
 	next ""
-	next "MONEY@"
+	next "DINERO@"
 
 .ID_No:
 	db $27, $28, -1 ; ID NO
@@ -301,12 +301,12 @@ TrainerCard_Page1_PrintDexCaught_GameTime:
 
 .Dex_PlayTime:
 	db   "#DEX"
-	next "PLAY TIME@"
+	next "TIEMPO JUEGO@"
 
 	db "@" ; unused
 
 .Badges:
-	db "  BADGES▶@"
+	db "MEDALLAS▶@"
 
 .StatusTilemap:
 	db $29, $2a, $2b, $2c, $2d, -1
@@ -454,7 +454,7 @@ TrainerCard_Page1_PrintGameTime:
 	ldh a, [hVBlankCounter]
 	and $1f
 	ret nz
-	hlcoord 15, 12
+	hlcoord 14, 12
 	ld a, [hl]
 	xor " " ^ $2e ; alternate between space and small colon ($2e) tiles
 	ld [hl], a

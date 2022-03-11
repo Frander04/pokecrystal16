@@ -41,10 +41,10 @@ MainMenu:
 	dw .Strings
 
 .Strings:
-	db "CONTINUE@"
-	db "NEW GAME@"
-	db "OPTION@"
-	db "MYSTERY GIFT@"
+	db "CONTINUAR@"
+	db "JUEGO NUEVO@"
+	db "OPCIÓN@"
+	db "REGALO MISTERIOSO@"
 	db "MOBILE@"
 	db "MOBILE STUDIUM@"
 
@@ -294,22 +294,16 @@ MainMenu_PrintCurrentTimeAndDay:
 	ld e, l
 	pop hl
 	call PlaceString
-	ld h, b
-	ld l, c
-	ld de, .Day
-	call PlaceString
 	ret
 
 .Days:
-	db "SUN@"
-	db "MON@"
-	db "TUES@"
-	db "WEDNES@"
-	db "THURS@"
-	db "FRI@"
-	db "SATUR@"
-.Day:
-	db "DAY@"
+	db "DOMINGO@"
+	db "LUNES@"
+	db "MARTES@"
+	db "MIERCOLES@"
+	db "JUEVES@"
+	db "VIERNES@"
+	db "SABADO@"
 
 Function49ed0:
 	xor a
