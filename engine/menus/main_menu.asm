@@ -29,7 +29,7 @@ MainMenu:
 
 .MenuHeader:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 0, 0, 16, 7
+	menu_coords 0, 0, 19, 7
 	dw .MenuData
 	db 1 ; default option
 
@@ -278,7 +278,7 @@ MainMenu_PrintCurrentTimeAndDay:
 	ret
 
 .TimeNotSet:
-	db "TIME NOT SET@"
+	db "HORA NO FIJADA@"
 
 .UnusedText:
 	; Clock time unknown
