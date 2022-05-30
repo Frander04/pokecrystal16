@@ -125,7 +125,7 @@
 	
 	charmap "<note>",    $c6
 	charmap "<love>",    $c7
-	charmap "<sus>",     $c8
+	charmap "<star>",    $c8
 	charmap "¡",         $c9
 	
 	charmap "Ú",         $ca
