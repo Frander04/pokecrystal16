@@ -152,7 +152,6 @@ ROMX $39
 	"bank39"
 ROMX $3a
 	"Audio"
-	"Songs 1"
 ROMX $3b
 	"Songs 2"
 ROMX $3c

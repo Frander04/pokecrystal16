@@ -3,7 +3,7 @@
 Music:
 ; entries correspond to MUSIC_* constants
 	dba Music_Nothing
-	dba Music_TitleScreen
+	dba Music_RSTitleScreen
 	dba Music_Route1
 	dba Music_Route3
 	dba Music_Route12
@@ -62,7 +62,7 @@ Music:
 	dba Music_LookRocket
 	dba Music_LookPokemaniac
 	dba Music_LookSage
-	dba Music_NewBarkTown
+	dba Music_LittlerootTown
 	dba Music_GoldenrodCity
 	dba Music_VermilionCity
 	dba Music_PokemonChannel
@@ -106,3 +106,4 @@ Music:
 	dba Music_SuicuneBattle
 	dba Music_BattleTowerLobby
 	dba Music_MobileCenter
+	
